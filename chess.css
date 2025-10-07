@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: "Sniglet", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+#title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.bar {
+    display: flex;
+}
+
+.nav {
+    flex: auto;
+    font-size: xx-large;
+    color: #BBD58E;
+    background-color: #344E41;
+    border-color: #BBD58E;
+    border-style: solid;
+    padding: 3px;
+    height: 60px;
+}
+
+.info {
+    display: flex;
+}
+
+#piece {
+    flex: auto;
+    font-size: x-large;
+    align-content: center;
+    height: 15em;
+}
