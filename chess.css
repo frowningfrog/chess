@@ -6,32 +6,56 @@ body {
 }
 
 #title {
-    font-size: xx-large;
+    cursor: default;
+    color: black;
+    font-size: 3.5em;
     font-weight: bold;
+    text-decoration: none;
+    display: block;
 }
 
-.bar {
-    display: flex;
+.menu {
+    display: inline-block;
+    position: relative;
 }
 
-.nav {
-    flex: auto;
-    font-size: xx-large;
+#dropbtn {
+    font-size: 2em;
     color: #BBD58E;
     background-color: #344E41;
     border-color: #BBD58E;
     border-style: solid;
-    padding: 3px;
-    height: 60px;
+    width: 7em;
+    height: 2em;
 }
 
-.info {
-    display: flex;
+.nav {
+    display: none;
+    position: absolute;
+    z-index: 1;
 }
 
-#piece {
-    flex: auto;
-    font-size: x-large;
-    align-content: center;
-    height: 15em;
+.nav button {
+    cursor: pointer;
+    font-size: 2em;
+    color: #BBD58E;
+    background-color: #344E41;
+    border: 3px solid #BBD58E;
+    margin-left: 1em;
+    width: 5em;
+    text-decoration: none;
+    display: block;
+}
+
+.menu:hover .nav {
+    display: block;
+}
+
+.blurb {
+    font-size: 3em;
+    display: none;
+}
+
+#intro {
+    display: block;
 }

@@ -1,15 +1,20 @@
-let blurb = "";
-let piece = "";
+var intro = document.getElementById("intro");
+var dropbtn = document.getElementById("dropbtn");
 
 function king() {
-    piece = "king";
-    checkPiece();
+    dropbtn.innerHTML = "The King";
+    document.getElementById("kb").style.display = "none";
+    document.getElementById("qb").style.display = "block";
+    intro.style.display = "none";
+    document.getElementById("queen").style.display = "none";
+    document.getElementById("king").style.display = "block";
 }
 
-function checkPiece() {
-    if(piece==="king"){
-        blurb = "The King is the piece you must protect.";
-    }
-
-    document.getElementById("piece").innerHTML = blurb;
+function queen() {
+    dropbtn.innerHTML = "The Queen";
+    document.getElementById("qb").style.display = "none";
+    document.getElementById("kb").style.display = "block";
+    intro.style.display = "none";
+    document.getElementById("king").style.display = "none";
+    document.getElementById("queen").style.display = "block";
 }

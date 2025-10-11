@@ -10,19 +10,22 @@
     </head>
     <body>
         <header>
-            <div id="title">Learn Chess Basics</div>
-            <div class="bar">
-                <button class="nav" onclick="king()">King</button>
-                <button class="nav" onclick="queen()">Queen</button>
-                <button class="nav" onclick="bishop()">Bishop</button>
-                <button class="nav" onclick="knight()">Knight</button>
-                <button class="nav" onclick="rook()">Rook</button>
-                <button class="nav" onclick="pawn()">Pawn</button>
+            <a id="title" href="index.html">Chess Pieces</a>
+            <div class="menu">
+                <button id="dropbtn">Select piece</button>
+                <div class="nav">
+                    <button id="kb" onclick="king()">King</button>
+                    <button id="qb" onclick="queen()">Queen</button>
+                    <button onclick="bishop()">Bishop</button>
+                    <button onclick="knight()">Knight</button>
+                    <button onclick="rook()">Rook</button>
+                    <button onclick="pawn()">Pawn</button>
+                </div>
             </div>
         </header>
-        <div class="info">
-            <div id="piece">Chess. The greatest game. Six pieces to learn. This is how they move.</div>
-        </div>
+        <div id="intro" class="blurb">Chess. The greatest game. This is how the pieces move.</div>
+        <div id="king" class="blurb">The King is the piece you must protect. It can move in any direction, 1 square at a time.</div>
+        <div id="queen" class="blurb">The Queen can move vertically, horizontally, or diagonally.</div>
 
         <script src="chess.js"></script>
     </body>
