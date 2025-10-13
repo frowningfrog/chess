@@ -8,6 +8,7 @@ function king() {
     intro.style.display = "none";
     document.getElementById("queen").style.display = "none";
     document.getElementById("king").style.display = "block";
+    document.getElementById("nav").style.display = "none";
 }
 
 function queen() {

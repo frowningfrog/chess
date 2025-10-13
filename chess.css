@@ -2,7 +2,8 @@ body {
     text-align: center;
     font-family: "Sniglet", sans-serif;
     font-style: normal;
-    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #title {
@@ -41,8 +42,9 @@ body {
     color: #BBD58E;
     background-color: #344E41;
     border: 3px solid #BBD58E;
-    margin-left: 1em;
-    width: 5em;
+    margin-left: 0.5em;
+    width: 6em;
+    height: 2em;
     text-decoration: none;
     display: block;
 }
@@ -52,10 +54,20 @@ body {
 }
 
 .blurb {
-    font-size: 3em;
+    font-size: 2.5em;
     display: none;
 }
 
 #intro {
     display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #title {
+        font-size: 5em;
+    }
+
+    .blurb {
+        font-size: 3em;
+    }
 }
