@@ -19,13 +19,20 @@
                     <button onclick="bishop()">Bishop</button>
                     <button onclick="knight()">Knight</button>
                     <button onclick="rook()">Rook</button>
-                    <button onclick="pawn()">Pawn</button>
+                    <button id ="pb" onclick="pawn()">Pawn</button>
                 </div>
             </div>
         </header>
-        <div id="intro" class="blurb">Chess. The greatest game. This is how the pieces move.</div>
-        <div id="king" class="blurb">The King is the piece you must protect. It can move in any direction, 1 square at a time.</div>
-        <div id="queen" class="blurb">The Queen can move vertically, horizontally, or diagonally.</div>
+        <div id="info">
+            <img id="kingp" src="res/king.png">
+            <img id="queenp" src="res/queen.png">
+            <img id="pawnp" src="res/pawn.png">
+            <div id="box">
+                <div id="intro" class="blurb">Chess. The ultimate game of strategy. This is how the pieces move.</div>
+                <div id="king" class="blurb">The King is the piece you must protect. It can move in any direction, 1 square at a time.</div>
+                <div id="queen" class="blurb">The Queen can move vertically, horizontally, or diagonally.</div>
+            </div>
+        </div>
 
         <script src="chess.js"></script>
     </body>

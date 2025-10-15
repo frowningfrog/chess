@@ -53,6 +53,17 @@ body {
     display: block;
 }
 
+#info {
+    vertical-align: middle;
+    display: flex;
+}
+
+#box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 .blurb {
     font-size: 2.5em;
     display: none;
@@ -60,6 +71,10 @@ body {
 
 #intro {
     display: block;
+}
+
+#kingp, #queenp, #pawnp {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
