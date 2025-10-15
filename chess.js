@@ -40,4 +40,7 @@ function pawn() {
     document.getElementById("kingp").style.display = "none";
     document.getElementById("queenp").style.display = "none";
     document.getElementById("pawnp").style.display = "block";
+
+document.getElementById("king").style.display = "none";
+    document.getElementById("queen").style.display = "none";
 }
