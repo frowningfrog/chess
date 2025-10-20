@@ -2,8 +2,7 @@ body {
     text-align: center;
     font-family: "Sniglet", sans-serif;
     font-style: normal;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
 }
 
 #title {
@@ -21,11 +20,11 @@ body {
 }
 
 #dropbtn {
+    cursor: pointer;
     font-size: 2em;
     color: #BBD58E;
     background-color: #344E41;
-    border-color: #BBD58E;
-    border-style: solid;
+    border: 3px solid #BBD58E;
     width: 7em;
     height: 2em;
 }
@@ -36,15 +35,17 @@ body {
     z-index: 1;
 }
 
-.nav button {
+.nav a {
     cursor: pointer;
     font-size: 2em;
     color: #BBD58E;
+    line-height: 1.5em;
     background-color: #344E41;
     border: 3px solid #BBD58E;
-    margin-left: 0.5em;
-    width: 6em;
-    height: 2em;
+    margin-left: 1em;
+    margin-top: -2px;
+    width: 5em;
+    height: 1.5em;
     text-decoration: none;
     display: block;
 }
@@ -64,25 +65,32 @@ body {
     flex-direction: column;
 }
 
+img {
+    width: 15%;
+    height: 30%;
+}
+
 .blurb {
     font-size: 2.5em;
-    display: none;
 }
 
-#intro {
-    display: block;
-}
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
-#kingp, #queenp, #pawnp {
-    display: none;
-}
-
-@media only screen and (max-width: 600px) {
-    #title {
+    /*#title {
         font-size: 5em;
     }
 
     .blurb {
         font-size: 3em;
+    }*/
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 900px;
     }
 }
